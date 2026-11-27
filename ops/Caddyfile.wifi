@@ -1,0 +1,16 @@
+{
+    admin off
+    auto_https disable_redirects
+    servers {
+        protocols h1 h2
+    }
+}
+https://:8444 {
+    bind {$DP30_WIFI_IP}
+    tls "{$DP30_WIFI_CERT}" "{$DP30_WIFI_KEY}"
+    reverse_proxy 127.0.0.1:8451 127.0.0.1:8452 {
+        lb_policy round_robin
+        health_uri /health
+        health_interval 5s
+    }
+}
