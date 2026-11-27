@@ -1,0 +1,10 @@
+{
+  "transport": "HTTPS through Caddy local reverse proxy",
+  "postgres": "18",
+  "passed_test_functions": 7,
+  "request_commands_by_process": [
+    24,
+    24
+  ],
+  "openapi_via_proxy": true
+}

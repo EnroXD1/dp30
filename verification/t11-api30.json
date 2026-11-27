@@ -1,0 +1,10 @@
+{
+  "device": "emulator-5558",
+  "api": "30",
+  "width_dp": 360,
+  "font_scale": 1.5,
+  "request": 6,
+  "offline": false,
+  "seconds_until_confirmation_seen": null,
+  "result": "passed"
+}

@@ -1,0 +1,11 @@
+{
+  "device": "emulator-5556",
+  "api": "29",
+  "width_dp": 360,
+  "font_scale": 1.5,
+  "request": 3,
+  "offline": true,
+  "scenario": "offline-retry",
+  "seconds_until_confirmation_seen": 3.313000000000102,
+  "result": "passed"
+}

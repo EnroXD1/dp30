@@ -1,0 +1,8 @@
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="@raw/dp30_demo_ca" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

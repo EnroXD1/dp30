@@ -1,0 +1,12 @@
+{
+  "target_seconds": 600,
+  "elapsed_seconds": 600.19,
+  "clients": 20,
+  "requests": 46472,
+  "outcomes": {
+    "200": 46472
+  },
+  "p95_seconds": 0.078,
+  "rate_5xx": 0.0,
+  "numeric_thresholds_met": true
+}

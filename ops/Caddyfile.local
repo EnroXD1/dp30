@@ -1,0 +1,13 @@
+{
+    admin off
+    auto_https disable_redirects
+}
+https://:{$DP30_PROXY_PORT:8443} {
+    bind 127.0.0.1
+    tls "{$DP30_CERT_FILE}" "{$DP30_KEY_FILE}"
+    reverse_proxy 127.0.0.1:{$DP30_API_PORT_A:8451} 127.0.0.1:{$DP30_API_PORT_B:8452} {
+        lb_policy round_robin
+        health_uri /health
+        health_interval 5s
+    }
+}
